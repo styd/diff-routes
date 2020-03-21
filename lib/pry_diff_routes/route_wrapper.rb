@@ -1,19 +1,11 @@
 require 'action_dispatch/routing/inspector'
 require_relative 'util'
-
-if RUBY_ENGINE == 'ruby'
-  using Module.new {
-    refine Hash do
-      alias old_to_s to_s
-      def to_s
-        old_to_s.gsub(%r{\:(\w+)\=\>}, "\\1: ")
-      end
-    end
-  }
-end
+require_relative 'modern_hash_format'
 
 module PryDiffRoutes
   class RouteWrapper < ActionDispatch::Routing::RouteWrapper
+    using ModernHashFormat if RUBY_ENGINE == 'ruby'
+
     include Util
     include Comparable
 

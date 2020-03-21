@@ -61,7 +61,7 @@ module PryDiffRoutes
 
     def constraints_changes(before, after)
       if before.constraints != after.constraints
-        <<-DIFF.chomp
+        pad_lines <<~DIFF.chomp, 2
           #{arrow_key('Constraints')}-#{highlight_red before.constraints}
                         +#{highlight_green after.constraints}
         DIFF

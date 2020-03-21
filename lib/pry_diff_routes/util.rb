@@ -1,5 +1,9 @@
+require_relative 'modern_hash_format'
+
 module PryDiffRoutes
   module Util
+    using ModernHashFormat if RUBY_ENGINE == 'ruby'
+
     module_function
 
     def pad_lines(text="", pad_length=0)
