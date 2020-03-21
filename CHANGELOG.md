@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 
 
 ## [Unreleased]
+### Added
+- Demo to readme
+
 ### Fixed
 - Constraints indentation on modified routes formatting
 - Modern hash format on modified routes formatting
