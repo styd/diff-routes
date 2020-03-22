@@ -11,8 +11,32 @@ gem 'pry-diff-routes', group: :development
 ```
 
 ## Usage
+### Flags
 
-![pry-diff-routes demo](/images/pry-diff-routes.gif)
+A route is considered the same route if it maintains its verb (http method, e.g. `GET`, `POST`,
+etc.) and uri path. When its other properties are changed, we call it a modified route.
+
+#### `-R` or `--removed`
+
+Show removed routes only.
+
+#### `-M` or `--modified`
+
+Show modified routes only.
+
+#### `-N` or `--new`
+
+Show new routes only.
+
+#### `-S` or `--save`
+
+Make current routes as the basis for changes.
+
+You can combine `-R`, `-M`, and `-N` together, but not `-S`.
+
+### Demo Screenshot
+
+![pry-diff-routes demo screenshot](/images/demo-screenshot.gif)
 
 ## Contributing
 
