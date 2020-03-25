@@ -4,7 +4,9 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 ### Added
-- Demo to readme
+- Testing status badge
+- Github action for testing workflow
+- Demo screenshot to readme
 
 ### Fixed
 - Constraints indentation on modified routes formatting
