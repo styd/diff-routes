@@ -1,4 +1,4 @@
-name: pry-diff-routes
+name: build
 
 on:
   push:
