@@ -1,4 +1,4 @@
-# PryDiffRoutes ![build](https://github.com/styd/pry-diff-routes/workflows/build/badge.svg?branch=master)
+# PryDiffRoutes ![build-test](https://github.com/styd/pry-diff-routes/workflows/build-test/badge.svg?branch=master)
 
 > Inspect routes changes in Rails console.
 
