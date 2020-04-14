@@ -48,9 +48,9 @@ RSpec.describe PryDiffRoutes::RouteWrapper do
 
   describe '#to_s' do
     it 'displays the routes changes' do
-      expect(first.to_s).to match %r|GET.*-> prefix.*-> CController.*-> #a.*-> {locale: :id}|m
-      expect(second.to_s).to match %r|GET.*-> prefix.*-> CController.*-> #a.*-> {locale: :en}|m
-      expect(third.to_s).to match %r|GET.*-> prefix.*-> CController.*-> #b.*-> {locale: :es}|m
+      expect(first.to_s).to match %r|GET.*-> prefix.*-> CController.*-> #a.*-> {:?locale.*:id}|m
+      expect(second.to_s).to match %r|GET.*-> prefix.*-> CController.*-> #a.*-> {:?locale.*:en}|m
+      expect(third.to_s).to match %r|GET.*-> prefix.*-> CController.*-> #b.*-> {:?locale.*:es}|m
     end
   end
 
@@ -87,10 +87,16 @@ RSpec.describe PryDiffRoutes::RouteWrapper do
   end
 
   describe '#display_constraints' do
-    it 'display constraints key with the constraints' do
+    it 'display constraints key with the constraints', if: RUBY_ENGINE == 'ruby' do
       expect(first.display_constraints).to eq 'Constraints -> {locale: :id}'
       expect(second.display_constraints).to eq 'Constraints -> {locale: :en}'
       expect(third.display_constraints).to eq 'Constraints -> {locale: :es}'
+    end
+
+    it 'display constraints key with the constraints', unless: RUBY_ENGINE == 'ruby' do
+      expect(first.display_constraints).to eq 'Constraints -> {:locale=>:id}'
+      expect(second.display_constraints).to eq 'Constraints -> {:locale=>:en}'
+      expect(third.display_constraints).to eq 'Constraints -> {:locale=>:es}'
     end
   end
 end
