@@ -10,6 +10,29 @@ Add this line to your application's Gemfile:
 gem 'pry-diff-routes', group: :development
 ```
 
+PryDiffRoutes will set Pry as the REPL in your Rails console, just like when you use PryRails.
+
+If you already used PryRails, you should install PryDiffRoutes after it.
+
+```ruby
+gem 'pry-rails' # not a dependency
+gem 'pry-diff-routes'
+```
+
+When you type `help` in Rails console, you'll notice that `diff-routes` is listed in the same
+group as PryRails commands.
+
+```
+Rails
+  diff-routes        Show the difference you made in routes.
+  find-route         See which urls match a given controller.
+  recognize-path     See which route matches a url.
+  show-middleware    Show all middleware (that rails knows about).
+  show-model         Show the given model.
+  show-models        Show all models.
+  show-routes        Show all routes in match order.
+```
+
 ## Usage
 ### Flags
 
