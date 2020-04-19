@@ -44,14 +44,14 @@ RSpec.describe PryDiffRoutes::Util do
   describe '.highlight_red' do
     it 'highlight text with red color' do
       ::STDERR.puts "    exhibit: #{highlight_red 'text'}"
-      expect(highlight_red 'text').to eq "\e[1;30;41mtext\e[0m"
+      expect(highlight_red 'text').to eq "\e[1;41mtext\e[0m"
     end
   end
 
   describe '.highlight_green' do
     it 'highlight text with green color' do
       ::STDERR.puts "    exhibit: #{highlight_green 'text'}"
-      expect(highlight_green 'text').to eq "\e[1;30;42mtext\e[0m"
+      expect(highlight_green 'text').to eq "\e[1;42mtext\e[0m"
     end
   end
 

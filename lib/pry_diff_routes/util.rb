@@ -19,11 +19,11 @@ module PryDiffRoutes
     end
 
     def highlight_red(text)
-      "\e[1;30;41m#{text}\e[0m"
+      "\e[1;41m#{text}\e[0m"
     end
 
     def highlight_green(text)
-      "\e[1;30;42m#{text}\e[0m"
+      "\e[1;42m#{text}\e[0m"
     end
 
     def bold(text)

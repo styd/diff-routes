@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+### Changed
+- Highlight red and green text style and color
+
 
 ## [0.1.1] - 2020-03-25
 ### Added
