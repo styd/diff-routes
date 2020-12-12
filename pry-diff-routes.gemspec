@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "pry", "~> 0.12.0"
+  spec.add_dependency "pry", ">= 0.12"
 
   spec.add_development_dependency "rails", ">= 5"
   spec.add_development_dependency "rake", "~> 12.0"
