@@ -1,4 +1,4 @@
-module PryDiffRoutes
+module PryRailsDiffRoutes
   class ModifiedRoutesFormatter
     include Util
 

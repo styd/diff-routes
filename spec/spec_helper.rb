@@ -1,7 +1,7 @@
 require "bundler/setup"
 require "rails"
 require "pry/testable"
-require "pry-diff-routes"
+require "pry-rails-diff-routes"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -1,4 +1,4 @@
-module PryDiffRoutes::ModernHashFormat
+module PryRailsDiffRoutes::ModernHashFormat
   refine Hash do
     alias old_to_s to_s
     def to_s

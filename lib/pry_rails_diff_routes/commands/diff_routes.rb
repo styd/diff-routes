@@ -1,6 +1,6 @@
 require_relative '../route_wrapper'
 
-module PryDiffRoutes
+module PryRailsDiffRoutes
   class DiffRoutes < Pry::ClassCommand
     R_MODE = 1; M_MODE = 2; N_MODE = 4; A_MODE = 7
 

@@ -5,7 +5,7 @@
 require 'spec_helper'
 include Pry::Testable
 
-RSpec.describe PryDiffRoutes::DiffRoutes do
+RSpec.describe PryRailsDiffRoutes::DiffRoutes do
   before do
     Rails.application = Class.new(Rails::Application)
     Rails.application.routes.draw do
@@ -13,7 +13,7 @@ RSpec.describe PryDiffRoutes::DiffRoutes do
       get :started, to: 'do#something'
     end
 
-    PryDiffRoutes::Railtie.console.last.call
+    PryRailsDiffRoutes::Railtie.console.last.call
   end
 
   context 'default' do

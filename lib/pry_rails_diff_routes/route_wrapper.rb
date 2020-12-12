@@ -2,7 +2,7 @@ require 'action_dispatch/routing/inspector'
 require_relative 'util'
 require_relative 'modern_hash_format'
 
-module PryDiffRoutes
+module PryRailsDiffRoutes
   class RouteWrapper < ActionDispatch::Routing::RouteWrapper
     using ModernHashFormat if RUBY_ENGINE == 'ruby'
 

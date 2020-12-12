@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PryDiffRoutes::NewRoutesFormatter do
+RSpec.describe PryRailsDiffRoutes::NewRoutesFormatter do
   describe '#to_s' do
     it 'returns "New:" text and routes diff' do
       formatter = described_class.new([:new_routes])

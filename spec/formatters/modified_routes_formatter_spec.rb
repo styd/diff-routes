@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PryDiffRoutes::ModifiedRoutesFormatter do
+RSpec.describe PryRailsDiffRoutes::ModifiedRoutesFormatter do
   describe '#to_s' do
     before do
       allow_any_instance_of(described_class).to receive(:routes_diff).and_return 'routes diff'

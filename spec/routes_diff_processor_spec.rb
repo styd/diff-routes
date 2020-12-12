@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PryDiffRoutes::RoutesDiffProcessor do
+RSpec.describe PryRailsDiffRoutes::RoutesDiffProcessor do
   describe '#changed?' do
     context 'when previous and current are different' do
       it 'returns true' do
@@ -90,17 +90,17 @@ RSpec.describe PryDiffRoutes::RoutesDiffProcessor do
 
   describe '#display_removed' do
     context 'show_removed? is true' do
-      it 'returns instance of PryDiffRoutes::RemovedRoutesFormatter' do
+      it 'returns instance of PryRailsDiffRoutes::RemovedRoutesFormatter' do
         allow_any_instance_of(described_class).to \
           receive(:show_removed?).and_return true
 
         expect(described_class.new(0, 0, 0).display_removed).to \
-          be_instance_of(PryDiffRoutes::RemovedRoutesFormatter)
+          be_instance_of(PryRailsDiffRoutes::RemovedRoutesFormatter)
       end
     end
 
     context 'show_removed? is false' do
-      it 'returns instance of PryDiffRoutes::RemovedRoutesFormatter' do
+      it 'returns instance of PryRailsDiffRoutes::RemovedRoutesFormatter' do
         allow_any_instance_of(described_class).to \
           receive(:show_removed?).and_return false
 
@@ -148,17 +148,17 @@ RSpec.describe PryDiffRoutes::RoutesDiffProcessor do
 
   describe '#display_modified' do
     context 'show_modified? is true' do
-      it 'returns instance of PryDiffRoutes::RemovedRoutesFormatter' do
+      it 'returns instance of PryRailsDiffRoutes::RemovedRoutesFormatter' do
         allow_any_instance_of(described_class).to \
           receive(:show_modified?).and_return true
 
         expect(described_class.new(0, 0, 0).display_modified).to \
-          be_instance_of(PryDiffRoutes::ModifiedRoutesFormatter)
+          be_instance_of(PryRailsDiffRoutes::ModifiedRoutesFormatter)
       end
     end
 
     context 'show_modified? is false' do
-      it 'returns instance of PryDiffRoutes::RemovedRoutesFormatter' do
+      it 'returns instance of PryRailsDiffRoutes::RemovedRoutesFormatter' do
         allow_any_instance_of(described_class).to \
           receive(:show_modified?).and_return false
 
@@ -206,17 +206,17 @@ RSpec.describe PryDiffRoutes::RoutesDiffProcessor do
 
   describe '#display_new' do
     context 'show_new? is true' do
-      it 'returns instance of PryDiffRoutes::RemovedRoutesFormatter' do
+      it 'returns instance of PryRailsDiffRoutes::RemovedRoutesFormatter' do
         allow_any_instance_of(described_class).to \
           receive(:show_new?).and_return true
 
         expect(described_class.new(0, 0, 0).display_new).to \
-          be_instance_of(PryDiffRoutes::NewRoutesFormatter)
+          be_instance_of(PryRailsDiffRoutes::NewRoutesFormatter)
       end
     end
 
     context 'show_new? is false' do
-      it 'returns instance of PryDiffRoutes::RemovedRoutesFormatter' do
+      it 'returns instance of PryRailsDiffRoutes::RemovedRoutesFormatter' do
         allow_any_instance_of(described_class).to \
           receive(:show_new?).and_return false
 

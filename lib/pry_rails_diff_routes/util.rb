@@ -1,6 +1,6 @@
 require_relative 'modern_hash_format'
 
-module PryDiffRoutes
+module PryRailsDiffRoutes
   module Util
     using ModernHashFormat if RUBY_ENGINE == 'ruby'
 

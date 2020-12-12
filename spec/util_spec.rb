@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PryDiffRoutes::Util do
+RSpec.describe PryRailsDiffRoutes::Util do
   include described_class
 
   describe '.pad_lines' do

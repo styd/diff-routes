@@ -1,4 +1,4 @@
-# PryDiffRoutes ![build-test](https://github.com/styd/pry-diff-routes/workflows/build-test/badge.svg?branch=master)
+# DiffRoutes ![build-test](https://github.com/styd/diff-routes/workflows/build-test/badge.svg?branch=master)
 
 > Inspect routes changes in Rails console.
 
@@ -7,16 +7,16 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'pry-diff-routes', group: :development
+gem 'pry-rails-diff-routes', group: :development
 ```
 
-PryDiffRoutes will set Pry as the REPL in your Rails console, just like when you use PryRails.
+DiffRoutes will set Pry as the REPL in your Rails console, just like when you use PryRails.
 
-If you already used PryRails, you should install PryDiffRoutes after it.
+If you already used PryRails, you should install DiffRoutes after it.
 
 ```ruby
 gem 'pry-rails' # not a dependency
-gem 'pry-diff-routes'
+gem 'pry-rails-diff-routes'
 ```
 
 When you type `help` in Rails console, you'll notice that `diff-routes` is listed in the same
@@ -59,15 +59,15 @@ You can combine `-R`, `-M`, and `-N` together, but not `-S`.
 
 ### Demo Screenshot
 
-![pry-diff-routes demo screenshot](/images/demo-screenshot.gif)
+![pry-rails-diff-routes demo screenshot](/images/demo-screenshot.gif)
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at
-https://github.com/styd/pry-diff-routes.
+https://github.com/styd/diff-routes.
 This project is intended to be a safe, welcoming space for collaboration, and contributors are
 expected to adhere to the
-[code of conduct](https://github.com/styd/pry-diff-routes/blob/master/CODE_OF_CONDUCT.md).
+[code of conduct](https://github.com/styd/diff-routes/blob/master/CODE_OF_CONDUCT.md).
 
 
 ## License
@@ -77,6 +77,6 @@ The gem is available as open source under the terms of the
 
 ## Code of Conduct
 
-Everyone interacting in the PryDiffRoutes project's codebases, issue trackers, chat rooms
+Everyone interacting in the DiffRoutes project's codebases, issue trackers, chat rooms
 and mailing lists is expected to follow the
-[code of conduct](https://github.com/styd/pry-diff-routes/blob/master/CODE_OF_CONDUCT.md).
+[code of conduct](https://github.com/styd/routes/blob/master/CODE_OF_CONDUCT.md).

@@ -1,4 +1,4 @@
-module PryDiffRoutes
+module PryRailsDiffRoutes
   class Railtie < Rails::Railtie
     # Cribbed from PryRails::Railtie
     # Removed Rails versions < 5 checking as they are no longer supported.
@@ -13,7 +13,7 @@ module PryDiffRoutes
         TOPLEVEL_BINDING.eval('self').extend ::Rails::ConsoleMethods
       end
 
-      require 'pry_diff_routes/commands'
+      require 'pry_rails_diff_routes/commands'
 
       DiffRoutes.new.save_routes(Rails.application.routes.routes)
     end

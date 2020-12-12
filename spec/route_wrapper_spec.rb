@@ -9,7 +9,7 @@ Route = -> (*args) {
 }
 
 
-RSpec.describe PryDiffRoutes::RouteWrapper do
+RSpec.describe PryRailsDiffRoutes::RouteWrapper do
   let(:first) {
     described_class.new(
       Route['prefix', 'GET', {controller: 'c', action: 'a', locale: :id}, :bravo]

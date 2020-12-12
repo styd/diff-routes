@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe PryDiffRoutes::RemovedRoutesFormatter do
+RSpec.describe PryRailsDiffRoutes::RemovedRoutesFormatter do
   describe '#to_s' do
     it 'returns "Removed:" text and routes diff' do
       formatter = described_class.new([:removed_routes])

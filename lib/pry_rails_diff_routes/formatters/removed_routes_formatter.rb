@@ -1,4 +1,4 @@
-module PryDiffRoutes
+module PryRailsDiffRoutes
   class RemovedRoutesFormatter
     def initialize(routes)
       @routes = routes

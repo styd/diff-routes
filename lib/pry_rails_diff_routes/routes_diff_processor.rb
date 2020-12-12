@@ -2,7 +2,7 @@ require_relative 'formatters/removed_routes_formatter'
 require_relative 'formatters/modified_routes_formatter'
 require_relative 'formatters/new_routes_formatter'
 
-module PryDiffRoutes
+module PryRailsDiffRoutes
   class RoutesDiffProcessor
     def initialize(previous_routes, current_routes, display_mode)
       @previous = previous_routes

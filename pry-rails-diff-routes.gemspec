@@ -1,14 +1,14 @@
-require_relative 'lib/pry_diff_routes/version'
+require_relative 'lib/pry_rails_diff_routes/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "pry-diff-routes"
-  spec.version       = PryDiffRoutes::VERSION
+  spec.name          = "pry-rails-diff-routes"
+  spec.version       = PryRailsDiffRoutes::VERSION
   spec.authors       = ["Adrian Setyadi"]
   spec.email         = ["a.styd@yahoo.com"]
 
   spec.summary       = %q{Inspect routes changes in Rails console}
   spec.description   = %q{A Pry plugin to see the difference you made to Rails routes}
-  spec.homepage      = "https://github.com/styd/pry-diff-routes"
+  spec.homepage      = "https://github.com/styd/diff-routes"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
